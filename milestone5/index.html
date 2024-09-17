@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet" />
+</head>
+<body>
+
+    
+        <h1>Shareable Resume Builder by Sualeha Khan</h1>
+   
+        <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username"><b>UserName:</b></label><br>
+            <input type="text" id="username" class="class1" required placeholder="Enter Your Name..." required> <br/> 
+  
+            <label for="name"><b>Name:</b></label><br>
+            <input type="text" id="name" class="class1" required placeholder="Enter Your Name..." required> <br/> 
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="email" class="class1" required placeholder="Enter Your Email..." required/> <br/>
+        <label for="phone"><b> Phone:</b> </label><br>
+        <input type="tel" id="phone" class="class1" required placeholder="Enter Your Contact No..." required/> <br/>
+        </fieldset>
+        <fieldset>
+        <legend>Qualification</legend>
+        
+        <textarea for="Qualification" id="qualification" rows="5" placeholder="Your qualification..." required></textarea>
+   
+         </fieldset>
+        <fieldset>
+            <legend>
+                Work Experience
+            </legend>
+            <textarea for="Experience" id="Experience" rows="5" placeholder="Your Experience..." required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Skills
+            </legend>
+            <textarea for="skills" id="Skills" rows="5" placeholder="Your Skills..." required></textarea>
+        </fieldset>
+        <button type="submit">Generate Resume</button>
+        </form>
+
+    <br>
+    <div id="Resume-generated" contenteditable="true">
+        <!--Generated resume displayed-->
+    </div>
+    <br>
+    <!--section For the Shareable link -->
+
+    <div id="shareable-link-container">
+        <h2>Shareable Link</h2>
+        <p><b>Here is the unique id for you resume:</b></p>
+    
+        <a href="#" id="shareable-link" target="_blank">sualehasabir@gmail.com</a><br>
+        <button id="DownloadPDF"><b>Download for PDF</b></button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
